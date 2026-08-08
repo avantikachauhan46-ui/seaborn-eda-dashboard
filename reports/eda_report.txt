@@ -1,0 +1,91 @@
+================================================================
+SEABORN EDA DASHBOARD - EXPLORATORY DATA ANALYSIS REPORT
+================================================================
+Generated   : 2026-08-08 13:40:20
+Dataset     : employee_data.csv
+Rows        : 400
+Columns     : 8
+Column names: EmployeeID, Department, Gender, Age, YearsExperience, Salary, PerformanceScore, SatisfactionScore
+----------------------------------------------------------------
+DESCRIPTIVE STATISTICS (numeric columns)
+----------------------------------------------------------------
+Column: EmployeeID
+  Mean   : 1200.5
+  Median : 1200.5
+  Mode   : 1001.0
+  Min    : 1001.0
+  Max    : 1400.0
+  Std    : 115.614
+  Skew   : 0.0
+
+Column: Age
+  Mean   : 40.055
+  Median : 40.0
+  Mode   : 33.0
+  Min    : 21.0
+  Max    : 59.0
+  Std    : 10.878
+  Skew   : 0.017
+
+Column: YearsExperience
+  Mean   : 17.163
+  Median : 17.0
+  Mode   : 0.0
+  Min    : 0.0
+  Max    : 38.0
+  Std    : 10.879
+  Skew   : 0.064
+
+Column: Salary
+  Mean   : 71501.409
+  Median : 70043.355
+  Mode   : 31242.6
+  Min    : 31242.6
+  Max    : 135887.54
+  Std    : 17746.036
+  Skew   : 0.285
+
+Column: PerformanceScore
+  Mean   : 6.985
+  Median : 7.05
+  Mode   : 6.9
+  Min    : 3.6
+  Max    : 10.0
+  Std    : 1.363
+  Skew   : -0.074
+
+Column: SatisfactionScore
+  Mean   : 6.648
+  Median : 6.7
+  Mode   : 10.0
+  Min    : 1.4
+  Max    : 10.0
+  Std    : 1.7
+  Skew   : -0.24
+
+----------------------------------------------------------------
+OUTLIER DETECTION (IQR method, 1.5x rule)
+----------------------------------------------------------------
+EmployeeID: 0 outliers (0.0%) outside [801.5, 1599.5]
+Age: 0 outliers (0.0%) outside [3.625, 76.625]
+YearsExperience: 0 outliers (0.0%) outside [-21.5, 54.5]
+Salary: 2 outliers (0.5%) outside [20152.334, 122977.324]
+PerformanceScore: 0 outliers (0.0%) outside [3.15, 10.75]
+SatisfactionScore: 3 outliers (0.77%) outside [2.2, 11.0]
+
+----------------------------------------------------------------
+MISSING VALUES
+----------------------------------------------------------------
+SatisfactionScore: 12 missing (3.0%)
+
+----------------------------------------------------------------
+CORRELATION MATRIX (numeric columns)
+----------------------------------------------------------------
+                   EmployeeID    Age  YearsExperience  Salary  PerformanceScore  SatisfactionScore
+EmployeeID              1.000 -0.007           -0.009  -0.006             0.047             -0.019
+Age                    -0.007  1.000            0.991   0.338            -0.025             -0.047
+YearsExperience        -0.009  0.991            1.000   0.330            -0.034             -0.037
+Salary                 -0.006  0.338            0.330   1.000            -0.001             -0.071
+PerformanceScore        0.047 -0.025           -0.034  -0.001             1.000              0.022
+SatisfactionScore      -0.019 -0.047           -0.037  -0.071             0.022              1.000
+================================================================

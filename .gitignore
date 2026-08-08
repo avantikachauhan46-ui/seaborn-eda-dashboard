@@ -1,0 +1,43 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.lnk
+
+# IDE
+.vscode/
+.idea/
+
+# Generated user output (keep the sample visualizations/report that ship
+# with the repo, but ignore anything a user generates locally at runtime)
+visualizations/*.png
+!visualizations/scatter_plot.png
+!visualizations/line_plot.png
+!visualizations/bar_plot.png
+!visualizations/box_plot.png
+!visualizations/violin_plot.png
+!visualizations/correlation_heatmap.png
+!visualizations/count_plot.png
+!visualizations/pair_plot.png
+
+reports/*.txt
+!reports/eda_report.txt
+
+# Logs
+*.log
